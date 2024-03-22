@@ -1,5 +1,5 @@
-name: Docker Manifest Cleanup
-description: A GitHub Action to clean up Docker image manifests in a DigitalOcean Container Registry.
+name: DigitalOcean Docker Registry Cleanup
+description: A GitHub Action to clean up multi-envirnments Docker image manifests in a DigitalOcean Container Registories.
 author: Seth Samuel
 branding:
   icon: 'trash-2'
