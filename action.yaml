@@ -1,6 +1,9 @@
 name: Docker Manifest Cleanup
 description: A GitHub Action to clean up Docker image manifests in a DigitalOcean Container Registry.
 author: Seth Samuel
+branding:
+  icon: 'trash-2'
+  color: 'blue'
 inputs:
   repository:
     description: 'The name of the repository.'
@@ -21,6 +24,3 @@ runs:
       - name: Remove images older than the last n versions
         shell: bash
         run: ${{ github.action_path }}/clean_registry.sh ${{ inputs.repository }} ${{ inputs.environment }} ${{ inputs.num_to_keep }} ${{ inputs.perform_gc }}
-# runs:
-#   using: 'docker'
-#   image: 'Dockerfile'
